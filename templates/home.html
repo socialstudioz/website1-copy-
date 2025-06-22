@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/project.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<script async src="https://tally.so/widgets/embed.js"></script>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logos"><a href="http://127.0.0.1:5000/"><img
+                    src="https://tse2.mm.bing.net/th?id=OIP.rbrFuf821BNE8w_VnVvoUwHaD4&pid=Api&P=0&h=180" alt=""></a>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <ul class="nav-links">
+            <li><a href="http://127.0.0.1:5000/">Home</a></li>
+            <li><a href="http://127.0.0.1:5000/room">Rooms</a></li>
+            <li><a href="http://127.0.0.1:5000/facility">Facilities</a></li>
+            <li><a href="http://127.0.0.1:5000/about">About Us</a></li>
+            <li><a href="http://127.0.0.1:5000/gallery">Gallery</a></li>
+            <li><a href="http://127.0.0.1:5000/contact">Contact</a></li>
+            <li><button class="book-now" data-tally-open="w4RyJd" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Book Now</button>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Image Slider -->
+    <div class="container">
+
+        <div class="slide">
+
+            <div class="item"
+                style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1280x900/637368635.jpg?k=087c48f9f4ed8f4ba2e7253d88ec03737148dff83e65d9099a309816957bf84c&o=&hp=1');">
+                <div class="content">
+                    <div class="name">Luxury Stay</div>
+                    <div class="des">Get mesmerized by the serene beauty and premium facilities.</div>
+                </div>
+            </div>
+
+            <div class="item"
+                style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1280x900/637476385.jpg?k=4d216fc6362a2d195862406d855f99741c401de37f706c0179c5dd692734c631&o=&hp=1');">
+                <div class="content">
+                    <div class="name">Mussoorie</div>
+                    <div class="des">Experience the Queen of Hills with unmatched comfort and luxury.</div>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url('https://wallpapercave.com/wp/wp8575427.jpg');">
+                <div class="content">
+                    <div class="name">Nature Calls</div>
+                    <div class="des">Dive into nature's lap with world-class hospitality.</div>
+                </div>
+            </div>
+            <div class="item"
+                style="background-image: url('https://wallpapercrafter.com/desktop4/1139242-india-mussoorie-wallpaper-hills-horizon-nature.jpg');">
+                <div class="content">
+                    <div class="name">Easy to visit</div>
+                    <div class="des">Effortless journey, unforgettable stay awaits you here.</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="button">
+            <button class="prev"><i class="fas fa-arrow-left"></i></button>
+            <button class="next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+
+    </div>
+
+
+    <section class="list-your-home">
+        <div class="list-left">
+            <h2>Reserve Your Home</h2>
+        </div>
+        <div class="list-right">
+            <a href="#tally-open=w4RyJd&tally-emoji-text=👋&tally-emoji-animation=wave" class="book-now-wrapper"
+                title="Limited Time Offer! Book Now & Get 20% OFF">
+                <div class="offer-tag">🔥 20% OFF | Limited Time</div>
+                <button class="book-now">
+                    <i class="fa-solid fa-plane"></i>
+                    <span>Book Now</span>
+                </button>
+            </a>
+
+            <a href="tel:+919773713050" class="info-box" title="Call us">
+                <i class="fas fa-phone"></i>
+                <span>+91 9773713050</span>
+            </a>
+            <a href="https://wa.link/kabjot" class="info-box" target="_blank" title="Chat on WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp Us</span>
+            </a>
+        </div>
+    </section>
+    <!-- Fancy Testimonials Section with Auto Scrolling & Animation -->
+    <section class="testimonial-section">
+        <h2 class="testimonial-title">What Guests Say</h2>
+        <div class="testimonial-wrapper">
+            <div class="testimonial-carousel" id="testimonial-carousel">
+                <!-- Testimonial Items -->
+                <div class="testimonial">
+                    <p>"I had an amazing stay at this Airbnb ! Everything was perfect – from the cozy and clean space to
+                        the beautiful surroundings. The host was incredibly welcoming and made sure I had everything I
+                        needed. I highly recommend this place to anyone visiting the area!"</p>
+                    <h3>Mohit</h3>
+                    <span>Guest</span>
+                </div>
+                <div class="testimonial">
+                    <p>"I had an amazing stay at this beautiful cottage! The location is absolutely stunning—perched
+                        perfectly to offer a mesmerizing panoramic view of Dehradun, especially at night when the city
+                        lights up like a sea of stars. Waking up to such a breathtaking sight was truly magical.
+
+                        The cottage itself is well-maintained, clean, and comfortable. The rooms are spacious, cozy, and
+                        designed to make you feel at home. The staff is incredibly polite, helpful, and ensures that
+                        every little detail is taken care of. The service was prompt and efficient, making my stay even
+                        more enjoyable.
+
+                        If you're looking for a peaceful retreat surrounded by nature, with excellent hospitality and
+                        jaw-dropping views, this is the perfect place. Highly recommended for anyone visiting Dehradun!"
+                    </p>
+                    <h3>Anurag Gupta</h3>
+                    <span>Guest</span>
+                </div>
+                <div class="testimonial">
+                    <p>"An amazing getaway from our busy city life with awesome view from this property's balcony.
+                        The food was amazing too. The caretaker made sure that we have delicious food each time
+                        we ordered that was better than ordering in the city."</p>
+                    <h3>Mridul Attrey</h3>
+                    <span>Guest</span>
+                </div>
+                <div class="testimonial">
+                    <p>"The staff was welcoming and eager to assist with a cheerful attitude.The rooms
+                        were spotless and exceptionally comfortable. Each morning, we delighted in a
+                        tasty breakfast and appreciated the hotel’s convenient location near major
+                        attractions."</p>
+                    <h3>Shahid Raza</h3>
+                    <span>Guest</span>
+                </div>
+                <div class="testimonial">
+                    <p>"This place is very peaceful. Same as shown in photos. We stayed there for 3 nights.
+                        Cook Mr. Dharam cooked delicious food. We enjoyed a lot at the property. The view
+                        from the property is stunning. The only drawback is as this is hill area, property
+                        has around 40 stairs. So keep in mind for senior citizens. Overall I will confidently
+                        recommend the property to enjoy holidays."</p>
+                    <h3>Neeraj Tyagi</h3>
+                    <span>Guest</span>
+                </div>
+                <div class="testimonial">
+                    <p>"We had a wonderful stay at this homestay! The view was absolutely breathtaking. The service was
+                        top-notch—staff were incredibly friendly and attentive, making sure we had everything we needed.
+                        The owner was kind, he went above and beyond to ensure we had everything we needed, making the
+                        experience even more special. Highly recommend for anyone looking for a peaceful and comfortable
+                        getaway!"</p>
+                    <h3>Himanshu</h3>
+                    <span>Guest</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="platforms-section">
+        <p class="platforms-subtitle">Listed on Top Travel Platforms</p>
+        <h2 class="platforms-title">Where You Can Find Us</h2>
+        <div class="platforms-logos">
+            <div class="logo"><img
+                    src="https://up.yimg.com/ib/th?id=OIP._hss77PvIscN2YprzrRd5QHaBm&pid=Api&rs=1&c=1&qlt=95&w=443&h=95"
+                    alt="Booking.com"></div>
+            <div class="logo"><img
+                    src="https://s.yimg.com/fz/api/res/1.2/ktJWUGr_.Sw6w8T8H03e6Q--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MzMy/https://s.yimg.com/zb/imgv1/26347c9d-9458-3369-b5a8-d946c1771358/t_500x300"
+                    alt="Airbnb"></div>
+            <div class="logo"><img src="https://logodix.com/logo/2126664.png" alt="MakeMyTrip"></div>
+            <div class="logo"><img
+                    src="https://up.yimg.com/ib/th?id=OIP.FvLk_DQUI-VWr6TH36bNIwHaCS&pid=Api&rs=1&c=1&qlt=95&w=250&h=77"
+                    alt="Goibibo"></div>
+            <div class="logo"><img
+                    src="https://up.yimg.com/ib/th?id=OIP.et_07huNG3nCqXLodUrU3QAAAA&pid=Api&rs=1&c=1&qlt=95&w=385&h=90"
+                    alt="Priceline"></div>
+            <div class="logo"><img
+                    src="https://up.yimg.com/ib/th?id=OIP.dxvkPyDHvWXrV5MJtHeOPwHaCM&pid=Api&rs=1&c=1&qlt=95&w=324&h=95"
+                    alt="BluePillow"></div>
+            <div class="logo"><img
+                    src="https://s.yimg.com/fz/api/res/1.2/UP8hn6zvUn_D16lTElClAA--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MzMy/https://s.yimg.com/zb/imgv1/2f39d0c3-03be-31cc-abe0-1d4e9fed11b2/t_500x300"
+                    alt="hotels.com"></div>
+            <div class="logo"><img
+                    src="https://s.yimg.com/fz/api/res/1.2/QDBh5.lXA.Rx9RZngTFKwQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MzMy/https://s.yimg.com/zb/imgv1/dd40d162-fa1d-3e0e-8e52-bac6acad7b9f/t_500x300"
+                    alt="Expedia"></div>
+            <div class="logo"><img
+                    src="https://s.yimg.com/fz/api/res/1.2/MyyddC_s89zJzBLjS2B99Q--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI2MDtxPTgwO3c9MzMy/https://s.yimg.com/zb/imgv1/d8e300a4-5a95-3dc5-b5cc-cb4d4d86a25a/t_500x300"
+                    alt="Trip.com"></div>
+        </div>
+    </section>
+
+    <!-- Rosastays Experience Section -->
+    <section class="experience-section">
+        <h2 class="section-title">Immerse Yourself in the Deodar Cottage Experience</h2>
+        <div class="experience-cards">
+            <div class="card">
+                <div class="icon"><i class="fas fa-eye"></i></div>
+                <h3>Mesmerizing Sights <span>(A Visual Treat)</span></h3>
+                <p>Wake up to breathtaking landscapes and artfully curated spaces that feed your soul.</p>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fas fa-ear-listen"></i></div>
+                <h3>Whispers of Silence <span>(Pure Serenity)</span></h3>
+                <p>Escape the noise. Discover places where only peace speaks to you.</p>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fas fa-wind"></i></div>
+                <h3>Fresh Aromas <span>(Nature's Perfume)</span></h3>
+                <p>Every breeze carries the sweet scent of flowers, forests, and fresh beginnings.</p>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fas fa-hand-sparkles"></i></div>
+                <h3>Softest Touch <span>(Indulgent Comfort)</span></h3>
+                <p>Wrap yourself in velvety softness and experience true luxury at your fingertips.</p>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fas fa-utensils"></i></div>
+                <h3>Flavors to Remember <span>(A Feast for the Heart)</span></h3>
+                <p>Savor the finest local and global cuisines crafted to delight every craving.</p>
+            </div>
+        </div>
+        <p class="experience-footer">At Deodar Cottage, every moment is a masterpiece of the senses. Come, feel alive
+            again!</p>
+    </section>
+
+    <!-- Sticky WhatsApp Button -->
+    <a href="https://wa.me/919773713050" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <section class="about-section">
+        <div class="about-left">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.rbrFuf821BNE8w_VnVvoUwHaD4&pid=Api&P=0&h=180" alt="">
+            <p>Our cottage offers a serene experience amidst nature, providing modern comfort in a rustic setting.</p>
+        </div>
+        <div class="about-right">
+            <h2>Contact Us</h2>
+            <p><i class="fas fa-map-marker-alt"></i> Deodar Cottage, Hathi Paon road, Kyar Kuli Bhatta, Mussoorie,
+                Uttarakhand</p>
+            <p><i class="fas fa-phone"></i> +91 9667774205</p>
+            <p><i class="fas fa-envelope"></i> deodarcottagee@gmail.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <div>&copy; Copyright 2024, All rights reserved</div>
+        <div class="footer-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" src="{{url_for('static', filename='script/project.js')}}"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+
+</html>

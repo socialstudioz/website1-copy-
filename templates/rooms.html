@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/project.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
+
+</head>
+<script async src="https://tally.so/widgets/embed.js"></script>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logos"><a href="http://127.0.0.1:5000/"><img src="https://tse2.mm.bing.net/th?id=OIP.rbrFuf821BNE8w_VnVvoUwHaD4&pid=Api&P=0&h=180"
+            alt=""></a></div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <ul class="nav-links">
+            <li><a href="http://127.0.0.1:5000/">Home</a></li>
+            <li><a href="http://127.0.0.1:5000/room">Rooms</a></li>
+            <li><a href="http://127.0.0.1:5000/facility">Facilities</a></li>
+            <li><a href="http://127.0.0.1:5000/about">About Us</a></li>
+            <li><a href="http://127.0.0.1:5000/gallery">Gallery</a></li>
+            <li><a href="http://127.0.0.1:5000/contact">Contact</a></li>
+            <li><button class="book-now" data-tally-open="w4RyJd" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Book Now</button>
+            </li>
+        </ul>
+    </nav>
+    <section class="roomg">
+        <h1 class="rg">Rooms</h1>
+    </section>
+
+    <section class="rooms-section">
+        <h1 class="section-heading">Accomodations at The Deodar Cottage</h1>
+
+        <div class="rooms-container">
+            <!-- Luxury Room -->
+            <div class="room-card">
+                <div class="room-image"
+                    style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1280x900/637480618.jpg?k=820dd4981286216cad50a9954368327e2ccdd0d817d56b59c26e2118f816299a&o=&hp=1');">
+                </div>
+                <div class="room-info">
+                    <h2>🌿 The Cozy Retreat (Ground Floor)</h2>
+                    <p>Nestled on the ground floor, this charming bedroom offers a warm, inviting ambiance. Designed for
+                        comfort and privacy, it features two single beds, a stylish sofa with a table, and a dedicated
+                        clothing storage space. The highlight is the large window that opens up to a tranquil mountain
+                        view, letting in natural light and a breath of fresh, pine-scented air. Ideal for those who
+                        prefer easy access and peaceful solitude.</p>
+                </div>
+            </div>
+
+            <!-- Superior Room -->
+            <div class="room-card">
+                <div class="room-image"
+                    style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1280x900/637368666.jpg?k=b81cdb9acd79d317423db300c33fbd1c03cd5231a3ee0e9eedbcdcf239e52e88&o=&hp=1');">
+                </div>
+                <div class="room-info">
+                    <h2>✨ The Luxury Suite (First Floor)</h2>
+                    <p>Located on the first floor, this elegantly appointed bedroom is the epitome of refined comfort.
+                        It boasts a sumptuous king-size bed, ample storage for clothing, and large windows that flood
+                        the room with light while framing breathtaking scenic views. Step out onto your private balcony
+                        to enjoy your morning coffee or unwind under the stars — the perfect setting for a serene
+                        escape.</p>
+                </div>
+            </div>
+            <div class="room-card">
+                <div class="room-image"
+                    style="background-image: url('https://a0.muscache.com/im/pictures/hosting/Hosting-1287480256579570027/original/05e0942d-4516-44f0-ada0-4fd71cb90f51.jpeg?im_w=1440');">
+                </div>
+                <div class="room-info">
+                    <h2>🌸 The Scenic Haven (First Floor)</h2>
+                    <p>Also on the first floor, this equally luxurious bedroom features a king-size bed, a spacious
+                        wardrobe, and panoramic windows that showcase the natural beauty of the surrounding landscape. A
+                        private balcony adds to its charm, offering a peaceful nook to bask in the morning sun or sip an
+                        evening drink with uninterrupted views. A blend of comfort and elegance, this room is ideal for
+                        guests who seek an elevated experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky WhatsApp Button -->
+    <a href="https://wa.link/kabjot" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <section class="about-section">
+        <div class="about-left">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.rbrFuf821BNE8w_VnVvoUwHaD4&pid=Api&P=0&h=180" alt="">
+            <p>Our cottage offers a serene experience amidst nature, providing modern comfort in a rustic setting.</p>
+        </div>
+        <div class="about-right">
+            <h2>Contact Us</h2>
+            <p><i class="fas fa-map-marker-alt"></i> Deodar Cottage, Hathi Paon road, Kyar Kuli Bhatta, Mussoorie,
+                Uttarakhand</p>
+            <p><i class="fas fa-phone"></i> +91 9667774205</p>
+            <p><i class="fas fa-envelope"></i> deodarcottagee@gmail.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <div>&copy; Copyright 2024, All rights reserved</div>
+        <div class="footer-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="{{url_for('static', filename='script/project.js')}}"></script>
+
+</body>
+
+</html>

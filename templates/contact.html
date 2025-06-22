@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/project.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+<script async src="https://tally.so/widgets/embed.js"></script>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logos"><a href="http://127.0.0.1:5000/"><img src="https://tse2.mm.bing.net/th?id=OIP.rbrFuf821BNE8w_VnVvoUwHaD4&pid=Api&P=0&h=180"
+            alt=""></a></div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <ul class="nav-links">
+            <li><a href="http://127.0.0.1:5000/">Home</a></li>
+            <li><a href="http://127.0.0.1:5000/room">Rooms</a></li>
+            <li><a href="http://127.0.0.1:5000/facility">Facilities</a></li>
+            <li><a href="http://127.0.0.1:5000/about">About Us</a></li>
+            <li><a href="http://127.0.0.1:5000/gallery">Gallery</a></li>
+            <li><a href="http://127.0.0.1:5000/contact">Contact</a></li>
+            <li><button class="book-now" data-tally-open="w4RyJd" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Book Now</button>
+            </li>
+        </ul>
+    </nav>
+    <!-- Sticky WhatsApp Button -->
+    <a href="https://wa.link/kabjot" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <section class="contactus">
+        <h1 class="head">Contact Us</h1>
+    </section>
+    <section class="contact-section">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <div class="info-item"><i class="fas fa-map-marker-alt"></i> Deodar Cottage, Hathi Paon road, Kyar Kuli
+                Bhatta, Mussoorie,Uttarakhand</div>
+            <div class="info-item"><i class="fas fa-phone"></i> +91 9667774205</div>
+            <div class="info-item"><i class="fas fa-envelope"></i> deodarcottagee@gmail.com</div>
+            <div class="follow-us">
+                <h2>Follow Us</h2>
+                <div class="follow-icons">
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="/submit" method="POST">
+                <input type="text" name="name" placeholder="Enter Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <textarea rows="5" name="message" placeholder="Enter your query" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+                      
+        </div>
+    </section>
+
+    <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439.9139672873666!2d78.05833109999999!3d30.438540699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d11c67046b69%3A0xc0ea71b30bf87544!2sDeodar%20Cottage%20%7C%20Scenic%20view%2C%20next%20to%20nature*21!5e0!3m2!1sen!2sin!4v1745003464656!5m2!1sen!2sin"
+        allowfullscreen></iframe>
+
+    <section class="about-section">
+        <div class="about-left">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.rbrFuf821BNE8w_VnVvoUwHaD4&pid=Api&P=0&h=180" alt="">
+            <p>Our cottage offers a serene experience amidst nature, providing modern comfort in a rustic setting.</p>
+        </div>
+        <div class="about-right">
+            <h2>Contact Us</h2>
+            <p><i class="fas fa-map-marker-alt"></i> Deodar Cottage, Hathi Paon road, Kyar Kuli Bhatta, Mussoorie,
+                Uttarakhand</p>
+            <p><i class="fas fa-phone"></i> +91 9667774205</p>
+            <p><i class="fas fa-envelope"></i> deodarcottagee@gmail.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <div>&copy; Copyright 2024, All rights reserved</div>
+        <div class="footer-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="{{url_for('static', filename='script/project.js')}}"></script>
+
+</body>
+
+</html>
