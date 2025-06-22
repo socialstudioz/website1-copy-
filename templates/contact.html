@@ -20,12 +20,12 @@
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
         <ul class="nav-links">
-            <li><a href="http://127.0.0.1:5000/">Home</a></li>
-            <li><a href="http://127.0.0.1:5000/room">Rooms</a></li>
-            <li><a href="http://127.0.0.1:5000/facility">Facilities</a></li>
-            <li><a href="http://127.0.0.1:5000/about">About Us</a></li>
-            <li><a href="http://127.0.0.1:5000/gallery">Gallery</a></li>
-            <li><a href="http://127.0.0.1:5000/contact">Contact</a></li>
+            <li><a href="{{ url_for('') }}">Home</a></li>
+            <li><a href="{{ url_for('room') }}">Rooms</a></li>
+            <li><a href="{{ url_for('facility') }}">Facilities</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
             <li><button class="book-now" data-tally-open="w4RyJd" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Book Now</button>
             </li>
         </ul>
