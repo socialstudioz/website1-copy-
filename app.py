@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 API_KEY = os.getenv("WEB3FORMS_API_KEY")
 
 @app.route('/')
@@ -73,3 +73,5 @@ def error():
 
 if __name__ == '__main__':
     app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
